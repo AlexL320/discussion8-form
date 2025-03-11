@@ -4,6 +4,15 @@
   --red: #FF0000;
   --black: #000000;
 }
+
+.skip{
+  position: absolute;
+  top: -20px;
+}
+
+.skip:focus{
+  top: 40px;
+}
   
   form {
     display: grid;
@@ -26,12 +35,19 @@
     color: #702082;
   }
 
+  .options{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: 1fr 1fr;
+  }
+
   #name {
     width: 100%;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
+    background: #FFFFFF;
     color: #9B9A6D;
   }
 
@@ -44,14 +60,14 @@
   input,
   textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     width: 100%;
   }
 
   input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #3c703c;
     color: white;
     border: none;
     border-radius: 5px;
